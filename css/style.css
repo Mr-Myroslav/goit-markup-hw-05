@@ -5,7 +5,7 @@
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
   --card-betwen: 30px;
-  --all-timing-animation: 250ms;
+  --all-timing-animation: 2500ms;
   --all-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -719,6 +719,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 250ms, visibility 250ms;
 }
 
 .modal-window {
@@ -729,8 +730,8 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: relative;
-  transform: scale(1.2);
-  transition-property: transform;
+  opacity: 1;
+  transition-property: opacity;
   transition-duration: var(--all-timing-animation);
   transition-timing-function: var(--all-transition-timing-function);
 }
